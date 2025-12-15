@@ -1,0 +1,43 @@
+# Exercise 3: Add Tests to Your Models
+# This exercise corresponds to the "Add Tests to Your Models" slide
+
+# GOAL: Add schema tests to the stg_orders model
+
+# TODO: In models/staging/_staging_tests.yml, add tests for:
+# 1. order_id should be unique and not_null
+# 2. customer_id should be not_null
+# 3. order_status should only be specific values
+# 4. order_purchased_at should be not_null
+
+# Copy this template to models/staging/_staging_tests.yml and fill in the TODOs:
+
+version: 2
+
+models:
+  - name: stg_orders
+    description: Staging table for orders
+    columns:
+      - name: order_id
+        description: Unique order identifier
+        tests:
+          # TODO: Add unique and not_null tests
+      
+      - name: customer_id
+        description: Foreign key to customers
+        tests:
+          # TODO: Add not_null test
+      
+      - name: order_status
+        description: Current order status
+        tests:
+          # TODO: Add accepted_values test
+          # Values: delivered, shipped, processing, canceled, invoiced
+      
+      - name: order_purchased_at
+        description: When the order was purchased
+        tests:
+          # TODO: Add not_null test
+
+# SOLUTION:
+# See the complete solution in models/staging/_sources.yml
+# Run: dbt test --select stg_orders

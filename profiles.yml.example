@@ -1,0 +1,25 @@
+# Copy this file to ~/.dbt/profiles.yml
+# Then update with your specific values
+
+dbt_intro_olist_real:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: dbt-intro-training        # Your GCP project ID
+      dataset: dbt_dev_yourname           # Replace 'yourname' with your name
+      threads: 4
+      timeout_seconds: 300
+      location: US
+      keyfile: /path/to/your/gcp-key.json  # Path to your service account JSON
+
+    prod:
+      type: bigquery
+      method: service-account
+      project: dbt-intro-training
+      dataset: dbt_prod
+      threads: 4
+      timeout_seconds: 300
+      location: US
+      keyfile: /path/to/your/gcp-key.json

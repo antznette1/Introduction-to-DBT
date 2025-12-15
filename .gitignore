@@ -1,0 +1,27 @@
+# dbt
+target/
+dbt_packages/
+logs/
+*.log
+
+# Python
+*.pyc
+__pycache__/
+.env
+venv/
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Credentials
+*.json
+!data/*.json
+profiles.yml

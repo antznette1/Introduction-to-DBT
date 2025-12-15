@@ -1,0 +1,6 @@
+status_code,status_name,status_description
+delivered,Delivered,Order successfully delivered to customer
+shipped,Shipped,Order in transit to customer
+processing,Processing,Order being prepared for shipment
+canceled,Canceled,Order canceled by customer or system
+invoiced,Invoiced,Order invoiced but not yet shipped
