@@ -395,5 +395,8 @@ dbt build --select fct_orders
 
 > **💡 Tip:** All the files for this lab are available in this `labs/lab_04_marts_testing/` folder. Copy them to the correct locations (`models/marts/`, `models/staging/`, `tests/`).
 >
+<<<<<<< HEAD
 > **Stuck?** Checkout the solution branch: `git checkout lab-04-complete`
 >>>>>>> 1d1be8c (Starter files with lab reference SQL files)
+=======
+>>>>>>> 9c07bf2 (Remove solution branches - reference files are in lab folders)

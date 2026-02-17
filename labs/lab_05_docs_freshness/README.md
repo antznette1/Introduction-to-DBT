@@ -195,5 +195,8 @@ You now know:
 
 > **💡 Tip:** Updated YAML files for this lab are available in this `labs/lab_05_docs_freshness/` folder. Copy them to replace your existing files in `models/staging/` and `models/marts/`.
 >
+<<<<<<< HEAD
 > **Stuck?** Checkout the solution branch: `git checkout lab-05-complete`
 >>>>>>> 1d1be8c (Starter files with lab reference SQL files)
+=======
+>>>>>>> 9c07bf2 (Remove solution branches - reference files are in lab folders)

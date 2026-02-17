@@ -369,5 +369,8 @@ dbt docs serve
 
 > **💡 Tip:** All the files for this lab are available in this `labs/lab_02_source_ref/` folder. Copy them to the correct locations (`models/staging/`, `models/intermediate/`).
 >
+<<<<<<< HEAD
 > **Stuck?** Checkout the solution branch: `git checkout lab-02-complete`
 >>>>>>> 1d1be8c (Starter files with lab reference SQL files)
+=======
+>>>>>>> 9c07bf2 (Remove solution branches - reference files are in lab folders)

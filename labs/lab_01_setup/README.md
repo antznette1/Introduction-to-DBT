@@ -86,5 +86,8 @@ dbt test    # Run all tests
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 > **Stuck?** Checkout the solution branch: `git checkout lab-01-complete`
 >>>>>>> 1d1be8c (Starter files with lab reference SQL files)
+=======
+>>>>>>> 9c07bf2 (Remove solution branches - reference files are in lab folders)

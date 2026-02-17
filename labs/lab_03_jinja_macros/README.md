@@ -75,5 +75,8 @@ dbt deps
 
 > **💡 Tip:** All the files for this lab are available in this `labs/lab_03_jinja_macros/` folder. Copy them to the correct locations (`models/intermediate/`, `macros/`).
 >
+<<<<<<< HEAD
 > **Stuck?** Checkout the solution branch: `git checkout lab-03-complete`
 >>>>>>> 1d1be8c (Starter files with lab reference SQL files)
+=======
+>>>>>>> 9c07bf2 (Remove solution branches - reference files are in lab folders)
