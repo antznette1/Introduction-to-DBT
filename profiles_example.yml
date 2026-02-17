@@ -1,0 +1,11 @@
+dbt_intro_olist:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: YOUR_GCP_PROJECT_ID
+      dataset: dbt_dev_yourname
+      location: US
+      keyfile: ~/.dbt/service_account.json
+      threads: 4

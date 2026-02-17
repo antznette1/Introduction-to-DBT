@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # dbt
 target/
 dbt_packages/
@@ -25,3 +26,15 @@ Thumbs.db
 *.json
 !data/*.json
 profiles.yml
+=======
+target/
+dbt_packages/
+logs/
+.user.yml
+venv/
+__pycache__/
+.DS_Store
+*.json
+profiles.yml
+!profiles_example.yml
+>>>>>>> 1d1be8c (Starter files with lab reference SQL files)

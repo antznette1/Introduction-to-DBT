@@ -83,3 +83,8 @@ dbt test    # Run all tests
 - [ ] Data loaded to BigQuery
 - [ ] `dbt run` completes
 - [ ] `dbt test` passes
+<<<<<<< HEAD
+=======
+
+> **Stuck?** Checkout the solution branch: `git checkout lab-01-complete`
+>>>>>>> 1d1be8c (Starter files with lab reference SQL files)

@@ -1,0 +1,70 @@
+version: 2
+
+sources:
+  - name: olist
+    description: "Raw Olist e-commerce data"
+    schema: raw_olist
+    
+    freshness:
+      warn_after:
+        count: 24
+        period: hour
+      error_after:
+        count: 48
+        period: hour
+    
+    tables:
+      - name: orders
+        description: "Order transactions"
+        loaded_at_field: order_purchase_timestamp
+        columns:
+          - name: order_id
+            description: "Primary key"
+          - name: customer_id
+            description: "FK to customers"
+          - name: order_status
+            description: "Order status"
+          - name: order_purchase_timestamp
+            description: "When order was placed"
+        
+      - name: customers
+        description: "Customer information"
+        columns:
+          - name: customer_id
+            description: "Primary key"
+          - name: customer_unique_id
+            description: "Unique customer across orders"
+          - name: customer_city
+            description: "City name"
+          - name: customer_state
+            description: "State code"
+        
+      - name: order_items
+        description: "Line items per order"
+        columns:
+          - name: order_id
+            description: "FK to orders"
+          - name: order_item_id
+            description: "Item sequence"
+          - name: product_id
+            description: "FK to products"
+          - name: price
+            description: "Item price (BRL)"
+          - name: freight_value
+            description: "Shipping cost (BRL)"
+        
+      - name: products
+        description: "Product catalog"
+        columns:
+          - name: product_id
+            description: "Primary key"
+          - name: product_category_name
+            description: "Category (Portuguese)"
+        
+      - name: product_category_name_translation
+        description: "Category translations"
+        columns:
+          - name: product_category_name
+            description: "Category (Portuguese)"
+          - name: product_category_name_english
+            description: "Category (English)"

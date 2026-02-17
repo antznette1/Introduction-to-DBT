@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Introduction to dbt - Real Olist E-Commerce Dataset (10K Orders)
 
 Welcome to the dbt Intro course! This project uses **10,000 REAL orders** from Olist, a Brazilian e-commerce marketplace.
@@ -294,3 +295,54 @@ This is real commercial data made publicly available by Olist on Kaggle for educ
 ---
 
 **🚀 Let's build with REAL data!**
+=======
+# dbt Intro - Olist E-commerce
+
+A hands-on dbt training project using the [Olist Brazilian E-commerce dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).
+
+## Repo Structure
+
+This repo uses **branches per lab** so you build the project step by step.
+
+| Branch | Lab | What You'll Build |
+|--------|-----|-------------------|
+| `main` | Starter | Data files, config, lab instructions |
+| `lab-01-complete` | Setup | BigQuery connection verified |
+| `lab-02-complete` | source() + ref() | Staging models, intermediate models, materializations |
+| `lab-03-complete` | Jinja + Macros | Jinja loops, custom macros, dbt packages |
+| `lab-04-complete` | Marts + Testing | Dimension/fact tables, schema & singular tests |
+| `lab-05-complete` | Docs + Freshness | Documentation, source freshness |
+
+## Getting Started
+
+1. Clone this repo and stay on `main`:
+   ```bash
+   git clone https://github.com/cbfacademy/Introduction-to-DBT.git
+   cd Introduction-to-DBT
+   ```
+
+2. Follow Lab 1 instructions in `labs/lab_01_setup/README.md`
+
+3. Build each lab by creating the files described in `labs/lab_XX/README.md`
+
+4. If you get stuck, checkout the completed branch to see the solution:
+   ```bash
+   git checkout lab-02-complete   # See the Lab 2 solution
+   git checkout main              # Go back to building it yourself
+   ```
+
+## Data
+
+The `data/` folder contains 5 CSV files from the Olist dataset:
+- `customers.csv` - Customer information
+- `orders.csv` - Order transactions
+- `order_items.csv` - Line items per order
+- `products.csv` - Product catalog
+- `product_category_name_translation.csv` - Category translations (PT to EN)
+
+## Prerequisites
+
+- Python 3.8+
+- Google Cloud account with BigQuery enabled
+- dbt-bigquery (`pip install dbt-bigquery`)
+>>>>>>> 1d1be8c (Starter files with lab reference SQL files)
