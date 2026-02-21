@@ -1,6 +1,7 @@
 version: 2
 
 sources:
+<<<<<<< HEAD
   - name: raw_data
     description: Real e-commerce data from Olist (Brazilian marketplace)
     database: bold-landing-428015-q0
@@ -10,11 +11,19 @@ sources:
     tables:
       - name: orders
         description: Real orders from Olist marketplace
+=======
+  - name: olist
+    description: "Raw Olist e-commerce data"
+    schema: raw_olist
+    tables:
+      - name: orders
+>>>>>>> d78a5ce (feat: add staging models and configured olist sources with tests)
         columns:
           - name: order_id
             tests:
               - unique
               - not_null
+<<<<<<< HEAD
           - name: customer_id
             tests:
               - not_null
@@ -35,19 +44,33 @@ sources:
             tests:
               - not_null
       
+=======
+
+>>>>>>> d78a5ce (feat: add staging models and configured olist sources with tests)
       - name: customers
         columns:
           - name: customer_id
             tests:
               - unique
               - not_null
+<<<<<<< HEAD
       
+=======
+
+      - name: order_items
+        columns:
+          - name: order_id
+            tests:
+              - not_null
+
+>>>>>>> d78a5ce (feat: add staging models and configured olist sources with tests)
       - name: products
         columns:
           - name: product_id
             tests:
               - unique
               - not_null
+<<<<<<< HEAD
       
       - name: product_category_name_translation
         columns:
@@ -55,3 +78,8 @@ sources:
             tests:
               - unique
               - not_null
+=======
+
+      - name: product_category_name_translation
+        description: "Translation table for categories"
+>>>>>>> d78a5ce (feat: add staging models and configured olist sources with tests)
